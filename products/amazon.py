@@ -1,5 +1,5 @@
 from .. import settings
-from scraper import scrape
+from ..scraper import scrape
 
 
 def get_product_data_by_asin(e, asin):

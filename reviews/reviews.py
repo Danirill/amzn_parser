@@ -1,5 +1,5 @@
 from .. import settings
-from scraper import scrape
+from ..scraper import scrape
 
 
 def get_reviews_by_asin(e, asin):
