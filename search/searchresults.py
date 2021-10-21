@@ -3,8 +3,8 @@ import errno
 import os
 import sys
 import json
-import settings
 
+from .. import settings
 from selectorlib import Extractor
 from products.amazon import get_product_data_by_asin
 from reviews.reviews import get_reviews_by_asin

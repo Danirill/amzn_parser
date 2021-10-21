@@ -2,7 +2,8 @@ import csv
 
 from selectorlib import Extractor
 
-import settings
+from .. import settings
+
 from scraper import scrape
 
 e = Extractor.from_yaml_file('selectors.yml')
