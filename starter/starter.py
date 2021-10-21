@@ -1,10 +1,12 @@
-import csv
+import sys
+sys.path.append("..")
 
+import csv
 from selectorlib import Extractor
 
-from .. import settings
+import settings
 
-from ..scraper import scrape
+from scraper import scrape
 
 e = Extractor.from_yaml_file('selectors.yml')
 
