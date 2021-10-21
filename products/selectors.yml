@@ -1,0 +1,118 @@
+name:
+    css: '#productTitle'
+    xpath: null
+    type: Text
+price:
+    css: '#price_inside_buybox'
+    xpath: null
+    type: Text
+short_description:
+    css: '#featurebullets_feature_div'
+    xpath: null
+    type: Text
+images:
+    css: '.imgTagWrapper img'
+    xpath: null
+    type: Attribute
+    attribute: data-a-dynamic-image
+rating:
+    css: span.arp-rating-out-of-text
+    xpath: null
+    type: Text
+number_of_reviews:
+    css: 'a.a-link-normal h2'
+    xpath: null
+    type: Text
+variants:
+    css: 'form.a-section li'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        name:
+            xpath: ""
+            type: Attribute
+            attribute: title
+        asin:
+            xpath: ""
+            type: Attribute
+            attribute: data-defaultasin
+product_description:
+    css: '#productDescription'
+    xpath: null
+    type: Text
+sales_rank:
+    css: 'li#SalesRank'
+    xpath: null
+    type: Text
+link_to_all_reviews:
+    css: 'div.card-padding a.a-link-emphasis'
+    xpath: null
+    type: Link
+bullets:
+    css: 'div.a-section.a-spacing-medium span.a-list-item'
+    xpath: null
+    multiple: true
+    type: Text
+table:
+    css: tr.a-spacing-small
+    xpath: null
+    multiple: true
+    type: HTML
+    children:
+        table_row_name:
+            css: 'td.a-span3 span.a-size-base'
+            xpath: null
+            type: Text
+        table_row_content:
+            css: 'td.a-span9 span.a-size-base'
+            xpath: null
+            type: Text
+user_tags:
+    css: span.cr-lighthouse-term
+    xpath: null
+    multiple: true
+    type: Text
+safety_info:
+    css: 'div.a-section.bucket div.a-section p:nth-of-type(2)'
+    xpath: null
+    type: Text
+details_table:
+    css: 'div.a-section div#detailBullets_feature_div'
+    xpath: null
+    type: Text
+    children:
+        list_items:
+            css: li
+            xpath: null
+            multiple: true
+            type: Text
+            children:
+                key:
+                    css: span.a-text-bold
+                    xpath: null
+                    type: Text
+                value:
+                    css: 'span:nth-of-type(2)'
+                    xpath: null
+                    type: Text
+customer_reviews:
+    css: 'div.a-section div.vse-video-item'
+    xpath: null
+    multiple: true
+    type: Attribute
+    attribute: data-video-url
+QA:
+    css: 'span.askTopQandA div.a-section > div.a-fixed-left-grid > div.a-fixed-left-grid-inner > div.a-fixed-left-grid-col.a-col-right'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        Q:
+            css: span.a-declarative
+            xpath: null
+            type: Text
+        A:
+            css: 'div.a-fixed-left-grid-col.a-col-right > span:nth-of-type(1)'
+            xpath: null
+            type: Text

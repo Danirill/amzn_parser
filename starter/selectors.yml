@@ -1,0 +1,5 @@
+disabled:
+    css: 'ul.a-pagination li.a-disabled'
+    xpath: null
+    multiple: true
+    type: Text

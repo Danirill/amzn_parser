@@ -1,0 +1,19 @@
+reviews:
+    css: 'div.a-row div.a-section.celwidget'
+    multiple: true
+    type: Text
+    children:
+        review_text:
+            css: 'div.a-row.a-spacing-small span.a-size-base span'
+            type: Text
+        review_title:
+            css: 'a.a-size-base span'
+            type: Text
+        stars_data:
+            css: 'div.a-row > a.a-link-normal:nth-of-type(1)'
+            type: Text
+        images:
+            css: 'img.review-image-tile'
+            multiple: true
+            type: Image
+
