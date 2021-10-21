@@ -3,13 +3,13 @@ import errno
 import os
 import sys
 import json
-
-from .. import settings
+sys.path.append("..")
+import settings
 from selectorlib import Extractor
 from products.amazon import get_product_data_by_asin
 from reviews.reviews import get_reviews_by_asin
-from ..scraper import scrape
-from ..utils import lookahead
+from scraper import scrape
+from utils import lookahead
 
 e = Extractor.from_yaml_file('search_results.yml')
 reviews_e = Extractor.from_yaml_file('../reviews/selectors.yml')
